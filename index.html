@@ -1,0 +1,99 @@
+<!--
+Name: Daniel Li
+Course: Web Development 20S
+Teacher: Ms. Hoitink
+School: Pembina Trails Collegiate (PTC)
+Date Last Modified: Oct 21st, 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--basic setup meta data, favicon and link to external css, oh and the title for the webpage-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Treaty One - Manitoba</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+
+<!--body element containing the content for the page-->
+<body>
+    <!--header tag for the navbar and ul-->
+    <header>
+        <nav>
+            <ul>
+                <h1 style="font-family: 'Courier New', Courier, monospace; font-size: 40px;">Treaty One - Manitoba</h1>
+                <li><a href="index.html">Go To The Home Page</a></li>
+                <li><a href="history.html">Learn About The History Of Treaty One</a></li>
+                <li><a href="today.html">Learn About Treaty One In 2024</a></li>
+                <li><a href="sources.html">Go To Sources Of Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--container for the parallax scrolling effect-->
+    <div class="parallax"></div>
+
+    <!--main for main content area-->
+    <main>
+        <!--article that contains sections explaining what is treaty one-->
+        <article id="what-is-treaty-one">
+            <h2>What is Treaty One?</h2>
+            <section>
+                <pre>
+                        Treaty One was a foundational agreement signed between First Nations and the Canadian Government. 
+                    The treaty covered the majority of Southern Manitoba, including the areas around Winnipeg. This treaty 
+                    was created as a way for the Canadian government to secure land for more European settlers while promising 
+                    certain rights and protections to the Indigenous People who had lived there for generations. The agreement 
+                    included promises about land, resources, and the protection of First Nations' way of life. However, the treaty 
+                    has been the subject of many misunderstandings and misinterpretations by both parties.
+                    <!--source for where i got the information-->
+                    <span style="font-style: italic; font-size: small;">Source: <a href="https://en.wikipedia.org/wiki/Treaty_1" target="_blank">Treaty 1 - Wikipedia</a></span>
+                </pre>
+            </section>
+            
+            <section>
+                <pre>
+                        To the First Nations, treaties are a sacred agreement that constitutionalize their relationship with the British Crown. 
+                    They believed that the agreements would guarantee mutual respect, protection of their lands, and cultural preservation. 
+                    However, over time, many First Nations leaders argue that the Canadian government has not honored the promises 
+                    made in these treaties, leading to disputes and calls for renegotiation or recognition of the promised treaty rights.
+                    <!--source for where i got the information-->
+                    <span style="font-style: italic; font-size: small;">Source: <a href="https://www.thecanadianencyclopedia.ca/en/article/aboriginal-treaties" target="_blank">Treaties with Indigenous Peoples in Canada - The Canadian Encyclopedia</a></span>
+                </pre>
+            </section>
+        </article>              
+
+        <!--article for figure that houses the images off treaty map areas-->
+        <article>
+            <h2>Treaty Areas In Canada</h2>
+            <div class="images">
+                <figure>
+                    <img src="media/treatymaps.jfif" alt="Colour Indicated Map of First Nations and Treaty Areas in Manitoba, Canada."/>
+                    <figcaption style="font-style:italic;">
+                        A map showcasing the First Nations and Treaty Areas in the province outline of Manitoba, with legends and colored areas to indicate locations and the areas of Treaty One to Five. <br/>
+                        <span style="font-size:small;">Source: <a href="https://www.manitobapossible.ca/land-acknowledgement" target="_blank">Land Acknowledgement - Manitoba Possible</a></span><br/>
+                    </figcaption>
+                    
+                    <br/>
+    
+                    <img src="media/numbered-treaties-cananda.jpg" alt="A gray and white map showcasing the areas occupied by all eleven numbered treaties in Canada."/>
+                    <figcaption style="font-style:italic;">
+                        A white map showing the outlines of Canada and its provinces and territories, with gray sections highlighting each individual areas occupied by all of the eleven numbered treaties, with the year of their signing present in the coloured spot. <br/>
+                        <span style="font-size:small;">Source: <a href="https://winnipeg.ctvnews.ca/the-numbered-treaties-in-canada-and-where-they-are-located-1.5606007" target="_blank">The Numbered Treaties In Canada And Where They Are Located - CTV News</a></span>
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    <!--footer for the source of the background image & age group-->
+    <footer>
+        <p>Background Image: <a href="https://redrivernorthheritage.com/first-nations-and-metis-people-of-red-river-settlement/" target="_blank">Red River North Heritage</a></p><br/>
+        <p>Intended for Grades 4 - 8</p>
+    </footer>
+</body>
+
+</html>
