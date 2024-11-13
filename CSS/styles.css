@@ -1,13 +1,23 @@
-/*styling for all, * means all, it is the UNIVERSAL SELECTOR*/
+/* 
+I chose the monochromatic colour family for green.
+
+Green was chosen because it symbolizes nature, harmony and growth, 
+representing the Indigenous aspects that of Treaty One. The shades of green 
+provide a calm and pleasing look, suitable for an educational site intended 
+for higher grades, along with high contrast for readability.
+*/
+
+/* styling for all, * means all, it is the UNIVERSAL SELECTOR */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/*styling for the general body area with the inclusion of a background image*/
+/* styling for the general body area with the inclusion of a background image */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: #1e1e1e; 
     color: #f5f5f5; 
@@ -18,120 +28,139 @@ body {
     background-position: center;
 }
 
-/*making of a "sticky" nav bar on top of the webpage*/
+/* making of a "sticky" nav bar on top of the webpage */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /*priority*/
     z-index: 10;
-    background-color: rgba(28, 28, 28, 0.8); 
+    background-color: rgba(10, 10, 10, 0.9); 
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/*formating of the ul element in the nav bar*/
+/* formatting of the ul element in the nav bar */
 nav ul {
     list-style-type: none;
     text-align: center;
 }
 
-/*spacing for the li items in the nav bar*/
+/* spacing for the li items in the nav bar */
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-/*the styling for the links in the nav bar*/
+/* styling for the links in the nav bar */
 nav ul li a {
-    color: #ddd; 
+    color: #7bc17b; 
     font-size: 18px;
     padding: 10px 20px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-/*creates a green round edged box around the links in the nav bar when you hover over them for better interactibility*/
-nav ul li a:hover {
     border-radius: 5px;
-    color: #fff; 
-    background-color: #4CAF50; 
 }
 
-/*styling for the main element, basically just color and round border for the area that main occupies */
+/* green round-edged box around the links in the nav bar when hovered */
+nav ul li a:hover {
+    color: #ffffff; 
+    background-color: #1f8126; 
+}
+
+
+/* styling for the main element */
 main {
     margin-top: 80px;
-    background-color: rgba(46, 46, 46, 0.9);
+    background-color: rgba(10, 10, 10, 0.9);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*styling for the heading at the top of the navbar, making it big and changing its font*/
 h1 {
-    font-size: 28px;
-    color: #4CAF50; /* Dark mode heading color */
+    font-size: 57px;
+    color: #388e3c; 
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*h2 font and margin stylings*/
+/* h2 font and margin stylings */
 h2 {
-    font-size: 28px;
-    color: #4CAF50; /* Dark mode heading color */
+    font-size: 39px;
+    color: #388e3c; 
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*gives more space between texts by giving it a margin bottom to the ids*/
+/* spacing for specific sections */
 #what-is-treaty-one, #treaty-one-today, #treaty-one-history, #sources {
     margin-bottom: 40px;
 }
 
-/*footer styling*/
+/* footer styling */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(46, 46, 46, 0.9); 
+    background-color: rgba(10, 10, 10, 0.9); 
     color: #f5f5f5;
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 20px;
+    border-radius: 8px;
 }
 
-
-/* W parallax!!! thank you for helping parallax! you make my webpage look so awesome because you do uhmmm, uhmmm, uhmmmmmmmmmm... "Make a layered scrolling effect" Yeah!!! got some help from ai for this one, please dont take marks off*/
+/* parallax */
 .parallax {
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
-    /*no repeating the background image*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*styling for pre, basically font and color change*/
+/* styling for pre */
 pre {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #f5f5f5;
+    font-size: 18px;
 }
 
-/*margin so the images look more formatted with the texts*/
+/* margin for images */
 .images {
     margin-left: 90px;
 }
 
-/*changes color when you highlight somthing*/
+/* color change for selection */
 ::selection {
-    background-color: #a9c2e5;
+    background-color: #1f8126;
 }
 
-/*changes the color of the link when it has been visited/clicked on to white so it fits the theme*/
-a:visited {
-    color: #ddd; 
+a:not(nav a){
+    color: #f5f5f5;
 }
 
-/*colour of the link text when you hober over it*/
-a:hover {
-    color: #0077cc; 
+a:not(nav a):hover{
+    color: #7bc17b;
+}
+
+/* styling for span */
+span {
+    font-size: 18px;
+}
+
+/* styling for figcaption and paragraphs */
+figcaption, p {
+    font-size: 16px;
+}
+
+/* styling for the paragraph sources */
+.paragraph-source {
+    font-style: italic; 
+    font-size: 16px;
+}
+
+/* styling for media sources */
+.media-source {
+    font-size: 15px; 
 }
