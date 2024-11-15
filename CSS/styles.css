@@ -5,6 +5,10 @@ Green was chosen because it symbolizes nature, harmony and growth,
 representing the Indigenous aspects that of Treaty One. The shades of green 
 provide a calm and pleasing look, suitable for an educational site intended 
 for higher grades, along with high contrast for readability.
+
+A monochromatic colour family is chosen because I felt its simplicity 
+highlights the professionalism that this website is supposed to give off.
+Its many shades of green also highlights nature, where everything seems to be a shade of green.
 */
 
 /* styling for all, * means all, it is the UNIVERSAL SELECTOR */
@@ -13,6 +17,8 @@ for higher grades, along with high contrast for readability.
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    line-height: 140%;
+    letter-spacing: 0.5px;
 }
 
 /* styling for the general body area with the inclusion of a background image */
